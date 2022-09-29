@@ -72,7 +72,9 @@ const Activity = () => {
                     updatebreak={updatebreak}
                 ></Showtime>
             </div>
+            <div>
 
+            </div>
         </div >
     );
 };

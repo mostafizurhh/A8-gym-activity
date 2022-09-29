@@ -4,6 +4,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .main-container h6 {
@@ -20,7 +21,6 @@
 
     .exercise-container img {
         width: 100%;
-        margin-bottom: 10px;
         border-radius: 10px;
     }
 
@@ -39,6 +39,7 @@
         display: grid;
         grid-template-columns: 4fr 1fr;
         margin-top: 0px;
+        margin-bottom: 20px;
         gap: 10px;
     }
 
@@ -52,19 +53,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         margin-top: 30px;
-        margin-bottom: 20px;
         padding-left: 10px;
     }
 
     .exercise-container img {
         width: 100%;
-        margin-bottom: 10px;
         border-radius: 10px;
     }
 
     .cart-container {
         background-color: rgba(240, 128, 128, 0.303);
-        height: 550px;
+        height: 540px;
         position: sticky;
         top: 1%;
     }
