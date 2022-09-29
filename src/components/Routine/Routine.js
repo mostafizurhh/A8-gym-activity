@@ -2,7 +2,11 @@ import React from 'react';
 import './Routine.css'
 import logo from './final-1.png'
 
-const Routine = () => {
+const Routine = ({ cart }) => {
+    let exerciseTime = 0
+    for (const exercise of cart) {
+        exerciseTime = exerciseTime + exercise.time
+    }
     return (
         <div className='text-center ps-1'>
 
@@ -38,7 +42,7 @@ const Routine = () => {
             </div>
             <h6 style={{ marginBottom: 12 }}>Exercise Details</h6>
             <div className='self-info mb-2'>
-                <small>Exercise time: </small>
+                <small>Exercise time: {exerciseTime} Seconds </small>
             </div>
             <div className='self-info mb-5'>
                 <small>Break time: </small>

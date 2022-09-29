@@ -12,7 +12,7 @@ const Exercise = (props) => {
                 <p className='card-text text-justify'>{description}</p>
                 <p><b>Time Required:</b> {time}s</p>
             </div>
-            <button className='btn btn-success' onClick={props.addToListHandler}>Add To List</button>
+            <button className='btn btn-success' onClick={() => props.addToListHandler(props.exercise)}>Add To List</button>
         </div>
 
     );

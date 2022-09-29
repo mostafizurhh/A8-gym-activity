@@ -6,6 +6,7 @@ import './Activity.css'
 
 const Activity = () => {
     const [exercises, setExercises] = useState([])
+    const [cart, setCart] = useState([])
 
     useEffect(() => {
         fetch('exercisedata.json')
@@ -13,8 +14,10 @@ const Activity = () => {
             .then(data => setExercises(data))
     }, [])
 
-    const addToListHandler = () => {
-        console.log('clicked')
+    const addToListHandler = (exercises) => {
+        console.log(exercises)
+        const newCart = [...cart, exercises]
+        setCart(newCart)
     }
 
     return (
@@ -34,7 +37,7 @@ const Activity = () => {
                 </div>
             </div>
             <div className='cart-container'>
-                <Routine></Routine>
+                <Routine cart={cart}></Routine>
             </div>
 
         </div >
