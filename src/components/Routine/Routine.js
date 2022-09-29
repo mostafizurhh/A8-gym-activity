@@ -17,7 +17,7 @@ const Routine = () => {
             </div>
             <div className='self-info d-flex lh-1 text-center mb-4'>
                 <div className='p-2'>
-                    <h5>73<small className='fw-light text-secondary'><small>Kg</small></small></h5>
+                    <h5>73<small className='fw-light text-secondary'><small><small>Kg</small></small></small></h5>
                     <small>Weight</small>
                 </div>
                 <div className='p-2'>
@@ -25,7 +25,7 @@ const Routine = () => {
                     <small>Height</small>
                 </div>
                 <div className='p-2'>
-                    <h5>35<small className='fw-light text-secondary'><small>Yrs</small></small></h5>
+                    <h5>35<small className='fw-light text-secondary'><small><small>Yrs</small></small></small></h5>
                     <small>Age</small>
                 </div>
             </div>
