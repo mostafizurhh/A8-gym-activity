@@ -8,10 +8,10 @@ const Exercise = (props) => {
 
         <div className='exercise card'>
             <img src={picture} alt="" />
-            <div className='card-body'>
+            <div className='card-body p-2'>
                 <h5>{title}</h5>
-                <p className='card-text text-justify'>{description.slice(0, 150)}</p>
-                <h6>Time Required: {time}s</h6>
+                <p className='card-text text-justify'>{description}</p>
+                <p><b>Time Required:</b> {time}s</p>
             </div>
             <button className='btn btn-success'>Add To List</button>
         </div>

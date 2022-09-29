@@ -14,20 +14,23 @@ const Activity = () => {
 
     return (
         <div className='main-container'>
-            <div className='exercise-container container'>
+            <div>
+                <h6>What will you choose today?</h6>
+                <div className='exercise-container'>
 
-                {
-                    exercises.map(exercise => <Exercise
-                        key={exercise.id}
-                        exercise={exercise}></Exercise>)
-                }
+                    {
+                        exercises.map(exercise => <Exercise
+                            key={exercise.id}
+                            exercise={exercise}></Exercise>)
+                    }
 
+                </div>
             </div>
             <div className='cart-container'>
                 <Routine></Routine>
             </div>
 
-        </div>
+        </div >
     );
 };
 
