@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Break = (props) => {
+
     const { time } = props.breaktime;
+
 
     return (
         <div className='ps-2 pb-2'>

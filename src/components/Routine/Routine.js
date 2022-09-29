@@ -17,7 +17,7 @@ const Routine = ({ cart }) => {
                     <img className='img-fluid' src={logo} alt="" />
                 </div>
                 <div className="lh-1 ms-2 fw-light">
-                    <small>Raz Ahmed</small> <br />
+                    <small>Razu Ahmed</small> <br />
                     <small>Paris,France</small>
                 </div>
             </div>
@@ -40,7 +40,6 @@ const Routine = ({ cart }) => {
                 <small>Exercise time: {exerciseTime} Seconds </small>
             </div>
             <h5 style={{ marginBottom: 12, textAlign: 'center' }}>Add A Break</h5>
-
         </div>
     );
 };

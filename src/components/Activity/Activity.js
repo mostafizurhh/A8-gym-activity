@@ -35,6 +35,9 @@ const Activity = () => {
 
     const addABreak = (breaktimes) => {
         console.log(breaktimes)
+        localStorage.setItem(breaktimes.id, JSON.stringify(breaktimes))
+        JSON.parse(localStorage.getItem(breaktimes.id))
+
         const newBreak = [...updatebreak, breaktimes]
         setUpdatebreak(newBreak)
     }
@@ -77,6 +80,6 @@ const Activity = () => {
             </div>
         </div >
     );
-};
 
+};
 export default Activity;
