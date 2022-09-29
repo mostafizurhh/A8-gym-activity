@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import './Routine.css'
 import logo from './final-1.png'
 
@@ -43,5 +42,4 @@ const Routine = ({ cart }) => {
         </div>
     );
 };
-
 export default Routine;

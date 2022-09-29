@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "picture": "https://www.helpguide.org/wp-content/uploads/resistance-band-woman-doing-leg-workout-768.jpg",
+        "title": "Donkey Kicks",
+        "description": "Donkey kicks works your core and shoulder muscles. Toning your muscles reduce fat and increase muscle strength.",
+        "time": 10
+    },
+    {
+        "id": 2,
+        "picture": "https://images.ctfassets.net/iqo3fk8od6t9/3Ss9KEYlaTTLSwNTmhgTpn/d5a5f1d45cc5de5102af3b544c9dfa6a/woman-doing-strength-exercises.jpg",
+        "title": "Sit-Ups",
+        "description": "Sit-ups are considered strength training. But for a well-rounded workout session, add some more floor routines for effective loss of weight.",
+        "time": 20
+    },
+    {
+        "id": 3,
+        "picture": "https://www.shape.com/thmb/Tye8tMYxKfF1OOJqldkgLIFxiJM=/1200x630/filters:fill(auto,1)/woman-doing-best-exercises-for-women-glute-bridge-e6f47ac657924c9db9753460b7415350.jpg",
+        "title": "Bridge Exercise",
+        "description": "Bridge Exercises enhances your core stability and targets abdominal muscles and lower back and hip muscles when done correctly.",
+        "time": 30
+    },
+    {
+        "id": 4,
+        "picture": "https://www.shape.com/thmb/1fqEMHNlbSb71aT8a4JGR9VZx_Y=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/side-plank-best-exercises-for-women_0-d8b8d084c7314a719d2e34ea05058e07.jpg",
+        "title": "Side Plank Push-Ups",
+        "description": "Side plank push-ups improve your core muscles. It also initiates the muscles in the chest, shoulders, and back.",
+        "time": 40
+    },
+    {
+        "id": 5,
+        "picture": "https://qph.cf2.quoracdn.net/main-qimg-384ffd9ca41e94684ade1ac09b1fc09c-lq",
+        "title": "Planks",
+        "description": "Planks are a core strength exercise working in three dimensions. It is a workout where your body should maintain a position similar to a push-up.",
+        "time": 50
+    },
+    {
+        "id": 6,
+        "picture": "https://www.shape.com/thmb/TztmCPjDiSvzbLNr28kbqDAE0hI=/1125x1125/smart/filters:no_upscale():focal(999x482:1001x484)/squat-GettyImages-1004449544-2000-f72d11a72ed84c1885ccbeed1ccaa3c1.jpg",
+        "title": "Squat",
+        "description": "The squat is not only a standalone compound movement, its also the base for strength training, moving your bodyweight, and walking.",
+        "time": 60
+    }
+]
