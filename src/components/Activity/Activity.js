@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredValue } from '../../fakeDb';
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
 import Routine from '../Routine/Routine';
@@ -34,7 +35,7 @@ const Activity = () => {
     }
 
     useEffect(() => {
-        const storedValue = JSON.parse(localStorage.getItem('addbreak'))
+        const storedValue = getStoredValue()
         const savedValue = []
         for (const id in storedValue) {
             const addedBreak = breaktimes.find(breaktime => breaktime.id === id)
@@ -44,16 +45,19 @@ const Activity = () => {
                 savedValue.push(addedBreak)
             }
             setUpdatebreak(savedValue)
+
         }
     }, [breaktimes])
 
     const addABreak = (breaktimes) => {
         console.log(breaktimes)
-        localStorage.setItem('addbreak', JSON.stringify(breaktimes))
+
+        // localStorage.setItem('addbreak', JSON.stringify(breaktimes))
         // JSON.parse(localStorage.getItem(breaktimes.id))
 
         const newBreak = [...updatebreak, breaktimes]
         setUpdatebreak(newBreak)
+        addToDb(breaktimes.id)
     }
     return (
         <div className='main-container'>
