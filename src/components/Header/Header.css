@@ -1,6 +1,7 @@
 .header {
-    background-color: bisque;
+    background-color: rgba(0, 0, 0, 0.767);
     text-align: center;
+    color: white;
     height: 70px;
     display: flex;
     align-items: center;
