@@ -33,10 +33,24 @@ const Activity = () => {
         setCart(newCart)
     }
 
+    useEffect(() => {
+        const storedValue = JSON.parse(localStorage.getItem('addbreak'))
+        const savedValue = []
+        for (const id in storedValue) {
+            const addedBreak = breaktimes.find(breaktime => breaktime.id === id)
+            if (addedBreak) {
+                const time = storedValue[id]
+                addedBreak.id = time;
+                savedValue.push(addedBreak)
+            }
+            setUpdatebreak(savedValue)
+        }
+    }, [breaktimes])
+
     const addABreak = (breaktimes) => {
         console.log(breaktimes)
-        localStorage.setItem(breaktimes.id, JSON.stringify(breaktimes))
-        JSON.parse(localStorage.getItem(breaktimes.id))
+        localStorage.setItem('addbreak', JSON.stringify(breaktimes))
+        // JSON.parse(localStorage.getItem(breaktimes.id))
 
         const newBreak = [...updatebreak, breaktimes]
         setUpdatebreak(newBreak)
