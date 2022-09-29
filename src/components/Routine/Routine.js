@@ -6,11 +6,11 @@ const Routine = () => {
     return (
         <div className='text-center ps-1'>
 
-            <div className='align-items-center mb-4'>
+            <div className='align-items-center mt-1 mb-4'>
                 <div>
                     <img className='img-fluid' src={logo} alt="" />
                 </div>
-                <div class="lh-1 ms-2 fw-light">
+                <div className="lh-1 ms-2 fw-light">
                     <small>Raz Ahmed</small> <br />
                     <small>Paris,France</small>
                 </div>

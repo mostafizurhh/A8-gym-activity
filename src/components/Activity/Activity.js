@@ -6,11 +6,16 @@ import './Activity.css'
 
 const Activity = () => {
     const [exercises, setExercises] = useState([])
+
     useEffect(() => {
         fetch('exercisedata.json')
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
+
+    const addToListHandler = () => {
+        console.log('clicked')
+    }
 
     return (
         <div className='main-container'>
@@ -21,7 +26,9 @@ const Activity = () => {
                     {
                         exercises.map(exercise => <Exercise
                             key={exercise.id}
-                            exercise={exercise}></Exercise>)
+                            exercise={exercise}
+                            addToListHandler={addToListHandler}
+                        ></Exercise>)
                     }
 
                 </div>
