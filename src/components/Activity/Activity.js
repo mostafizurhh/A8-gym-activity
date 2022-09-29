@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, getStoredValue } from '../../fakeDb';
+import { addToDb, getStoredValue } from '../fakedb';
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
 import Routine from '../Routine/Routine';
@@ -29,13 +29,12 @@ const Activity = () => {
     }, [])
 
     const addToListHandler = (exercises) => {
-        console.log(exercises)
         const newCart = [...cart, exercises]
         setCart(newCart)
     }
 
     useEffect(() => {
-        const storedValue = getStoredValue()
+        const storedValue = getStoredValue(breaktimes)
         const savedValue = []
         for (const id in storedValue) {
             const addedBreak = breaktimes.find(breaktime => breaktime.id === id)
@@ -44,20 +43,19 @@ const Activity = () => {
                 addedBreak.id = time;
                 savedValue.push(addedBreak)
             }
-            setUpdatebreak(savedValue)
-
         }
+        setUpdatebreak(savedValue)
     }, [breaktimes])
 
     const addABreak = (breaktimes) => {
         console.log(breaktimes)
-
+        addToDb(breaktimes)
         // localStorage.setItem('addbreak', JSON.stringify(breaktimes))
         // JSON.parse(localStorage.getItem(breaktimes.id))
 
         const newBreak = [...updatebreak, breaktimes]
         setUpdatebreak(newBreak)
-        addToDb(breaktimes.id)
+
     }
     return (
         <div className='main-container'>
