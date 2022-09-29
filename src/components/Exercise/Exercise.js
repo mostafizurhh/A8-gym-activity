@@ -11,7 +11,7 @@ const Exercise = (props) => {
             <div className='card-body'>
                 <h5>{title}</h5>
                 <p className='card-text text-justify'>{description.slice(0, 150)}</p>
-                <h6>Time: {time}s</h6>
+                <h6>Time Required: {time}s</h6>
             </div>
             <button className='btn btn-success'>Add To List</button>
         </div>
