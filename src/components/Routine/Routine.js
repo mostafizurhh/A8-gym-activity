@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Routine.css'
 import logo from './final-1.png'
 
+
 const Routine = ({ cart }) => {
+
     let exerciseTime = 0
     for (const exercise of cart) {
         exerciseTime = exerciseTime + exercise.time
     }
-    return (
-        <div className='text-center ps-1'>
 
+    return (
+        <div className='text-center'>
             <div className='align-items-center mt-1 mb-4'>
                 <div>
                     <img className='img-fluid' src={logo} alt="" />
@@ -33,22 +35,12 @@ const Routine = ({ cart }) => {
                     <small>Age</small>
                 </div>
             </div>
-            <h6 style={{ marginBottom: 24 }}>Add A Break</h6>
+            <h5 style={{ marginBottom: 12 }}>Exercise Details</h5>
             <div className='self-info mb-4'>
-                <button className='btn bg-white rounded-circle p-1 m-1'><small><small>30s</small></small></button>
-                <button className='btn bg-white rounded-circle p-1 m-1'><small><small>60s</small></small></button>
-                <button className='btn bg-white rounded-circle p-1 m-1'><small><small>90s</small></small></button>
-                <button className='btn bg-white rounded-circle p-1 m-1'><small><small>20s</small></small></button>
-            </div>
-            <h6 style={{ marginBottom: 12 }}>Exercise Details</h6>
-            <div className='self-info mb-2'>
                 <small>Exercise time: {exerciseTime} Seconds </small>
             </div>
-            <div className='self-info mb-5'>
-                <small>Break time: </small>
+            <h5 style={{ marginBottom: 12, textAlign: 'center' }}>Add A Break</h5>
 
-            </div>
-            <button className='btn btn-primary opacity-75'>Activity Completed</button>
         </div>
     );
 };
