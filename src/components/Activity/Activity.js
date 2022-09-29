@@ -10,7 +10,8 @@ const Activity = () => {
     const [exercises, setExercises] = useState([]);
     const [cart, setCart] = useState([]);
     const [breaktimes, setBreaktime] = useState([]);
-    const [updatebreak, setUpdatebreak] = useState([])
+    const [updatebreak, setUpdatebreak] = useState([]);
+
 
 
     useEffect(() => {

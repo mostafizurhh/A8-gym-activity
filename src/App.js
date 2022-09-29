@@ -9,6 +9,7 @@ function App() {
       <Header></Header>
       <Activity></Activity>
     </div>
+
   );
 }
 
